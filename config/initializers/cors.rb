@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://treat-streets-fe.herokuapp.com', 'http://localhost:3000'
+    origins 'https://treat-streets-fe.herokuapp.com', 'http://localhost:3000', 'https://treat-streets-3vlhsl3ia-asands17.vercel.app/'
 
     resource '/graphql',
       headers: :any,
