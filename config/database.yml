@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: treat-streets-be_production
-  username: treat-streets-be
-  password: <%= ENV['TREAT-STREETS-BE_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: <%= ENV['PGPASSWORD'] %>
+  url: <%= ENV[‘DATABASE_URL’] %>
