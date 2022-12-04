@@ -83,4 +83,4 @@ production:
   database: treat-streets-be_production
   username: postgres
   password: <%= ENV['PGPASSWORD'] %>
-  url: <%= ENV[‘DATABASE_URL’] %>
+  url: <%= ENV['DATABASE_URL'] %>
