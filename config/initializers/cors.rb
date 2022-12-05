@@ -8,8 +8,8 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # origins 'https://treat-streets-fe.herokuapp.com', 'http://localhost:3000', 'https://treat-streets-3vlhsl3ia-asands17.vercel.app/'
-    origins '*'
-    resource '*',
+    origins '*',
+    resource '/graphql',
       headers: :any,
       methods: [:post, :options, :head]
   end
